@@ -3,3 +3,5 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Roboj
 local Window = Library.CreateLib("Name", "RJTheme3")
 
 local Tab = Window:NewTab("Farm")
+  
+local Section = Tab:NewSection("Section Name")

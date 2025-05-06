@@ -8,4 +8,13 @@ local Section = Tab:NewSection("Section Name")
 
 Section:NewSlider("SliderText", "SliderInfo", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
     game.Workspace.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+local Section = Tab:NewSection("Section Name")
+
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+        game.Workspace.LocalPlayer.Character.Humanoid.JumpPower = 250
+    else
+        game.Workspace.LocalPlayer.Character.Humanoid.JumpPower = 55
+    end
 end)

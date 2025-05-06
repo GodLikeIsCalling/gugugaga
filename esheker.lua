@@ -7,5 +7,5 @@ local Tab = Window:NewTab("Farm")
 local Section = Tab:NewSection("Section Name")
 
 Section:NewSlider("SliderText", "SliderInfo", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    game.Workspace.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
